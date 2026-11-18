@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dostoiévski-se</title>
+</head>
+<body>
+    <h1>Escolha seu personagem</h1>
+    <form>
+        <ul>
+            <li><input type="text" placeholder="Seu nome" /></li>
+            <li><input type="email" placeholder="Seu email" /></li>
+            <li><textarea>digite aqui suas características</textarea></li>
+        </ul>    
+    
+    <form action="processar_formulario.php" method="post">
+        <label for="personagem">Escolha um personagem:</label>
+        <select id="personagem" name="personagem">
+            <option value="dimity">Dimity Karamázov</option>
+            <option value="ivan">Ivan Karamázov</option>
+            <option value="pyotr">Pyotr Karamázov</option>
+            <option value="alesha">Alësha Karamázov</option>      
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar">    
+    </form>
+</body>
+</html>
